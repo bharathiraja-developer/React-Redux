@@ -112,6 +112,7 @@ function AllProducts() {
               starRating={mobile.rating}
               src={mobile.thumbnail}
               state={mobile.state}
+              mobile={mobile}
             />
           ))}
         </div>

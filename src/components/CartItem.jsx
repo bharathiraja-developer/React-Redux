@@ -6,25 +6,25 @@ import { decHandle, reTotalHandle } from "../reducer/shoppingReducer";
 function CartItem({ item }) {
   const dispatch = useDispatch();
 
-  const perPrice = item.mrpPrice;
+  const perPrice = item.price;
   const [perTotal, setPerTotal] = useState(perPrice);
   return (
     <div className="row">
       <div className="col-3 d-flex justify-content-start">
         <img
           style={{ width: "100%", height: "100%", objectFit: "fill" }}
-          src={item.src}
+          src={item.thumbnail}
         ></img>
       </div>
       <div className="col-4 d-flex justify-content-start">
         <div>
-          <h4 className="ms-2">{item.mobileName}</h4>
-          <p className="ms-2">{item.mobileDescription}</p>
+          <h4 className="ms-2">{item.title}</h4>
+          <p className="ms-2">{item.description}</p>
         </div>
       </div>
       <div className="col-5">
         <p className="d-flex justify-content-end pe-4 mt-4">
-          Price : $ {item.mrpPrice}
+          Price : $ {item.price}
         </p>
 
         <div className="d-flex justify-content-end pe-4">

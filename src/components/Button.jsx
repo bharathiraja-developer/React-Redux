@@ -1,18 +1,15 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ValueContext } from "./Products";
 import { mobiles } from "./AllProducts";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { decHandle, incHandle } from "../reducer/shoppingReducer";
 
-function Button() {
-  const cart = useSelector((state) => state.cart);
+function Button({ mobile }) {
   const dispatch = useDispatch();
-  const array = useContext(ValueContext);
-  let id = array.id;
-  const [state, setState] = useState(array.state);
+  let id = mobile.id;
+  const [state, setState] = useState(mobile.state);
   const increment = (e) => {
-    dispatch(incHandle(array));
+    dispatch(incHandle(mobile));
     mobiles[e.target.id - 1].state = false;
     setState(false);
   };

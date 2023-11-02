@@ -9,8 +9,8 @@ const cartValueHandler = (state, action) => {
       let cartTotal = 0;
       let array = state.cartArray.concat(action.payload);
       for (let i = 0; i < array.length; i++) {
-        array[i].newPrice = array[i].mrpPrice;
-        cartTotal = cartTotal + array[i].mrpPrice;
+        array[i].newPrice = array[i].price;
+        cartTotal = cartTotal + array[i].price;
       }
       return {
         cart: state.cart + 1,
@@ -22,7 +22,7 @@ const cartValueHandler = (state, action) => {
       let dcartTotal = 0;
       let array1 = state.cartArray.filter((item) => item.id != id);
       for (let i = 0; i < array1.length; i++) {
-        dcartTotal = dcartTotal + array1[i].mrpPrice;
+        dcartTotal = dcartTotal + array1[i].price;
       }
       return {
         cart: state.cart - 1,
@@ -36,7 +36,7 @@ const cartValueHandler = (state, action) => {
       for (let i = 0; i < state.cartArray.length; i++) {
         let temporary = 0;
         if (Newid == state.cartArray[i].id) {
-          temporary = value * state.cartArray[i].mrpPrice;
+          temporary = value * state.cartArray[i].price;
           state.cartArray[i].newPrice = temporary;
         }
       }
