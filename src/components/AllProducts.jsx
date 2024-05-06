@@ -1,10 +1,10 @@
 import React from "react";
 import Products from "./Products";
-import iphone9 from "./mobileImages/iphone-9.jpg";
-import iphoneX from "./mobileImages/iphone-x.jpg";
-import samsung from "./mobileImages/samsung-uni-9.jpg";
-import oppo from "./mobileImages/oppo.jpg";
-import huawei from "./mobileImages/Huawei.jpg";
+import iphone9 from "../iphone-9.jpg";
+import iphoneX from "../iphone-x.jpg";
+import samsung from "../samsung-uni-9.jpg";
+import oppo from "../oppo.jpg";
+import huawei from "../Huawei.jpg";
 
 let mobiles = [
   {
@@ -18,7 +18,7 @@ let mobiles = [
     stock: 94,
     brand: "Apple",
     category: "smartphones",
-    thumbnail: { iphone9 },
+    thumbnail: iphone9,
     images: [
       "https://i.dummyjson.com/data/products/1/1.jpg",
       "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -39,7 +39,7 @@ let mobiles = [
     stock: 34,
     brand: "Apple",
     category: "smartphones",
-    thumbnail: { iphoneX },
+    thumbnail: iphoneX,
     images: [
       "https://i.dummyjson.com/data/products/2/1.jpg",
       "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -59,7 +59,7 @@ let mobiles = [
     stock: 36,
     brand: "Samsung",
     category: "smartphones",
-    thumbnail: { samsung },
+    thumbnail: samsung,
     images: ["https://i.dummyjson.com/data/products/3/1.jpg"],
   },
   {
@@ -73,7 +73,7 @@ let mobiles = [
     stock: 123,
     brand: "OPPO",
     category: "smartphones",
-    thumbnail: { oppo },
+    thumbnail: oppo,
     images: [
       "https://i.dummyjson.com/data/products/4/1.jpg",
       "https://i.dummyjson.com/data/products/4/2.jpg",
@@ -94,7 +94,7 @@ let mobiles = [
     stock: 32,
     brand: "Huawei",
     category: "smartphones",
-    thumbnail: { huawei },
+    thumbnail: huawei,
     images: [
       "https://i.dummyjson.com/data/products/5/1.jpg",
       "https://i.dummyjson.com/data/products/5/2.jpg",
