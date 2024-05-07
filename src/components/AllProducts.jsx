@@ -5,6 +5,7 @@ import iphoneX from "../iphone-x.jpg";
 import samsung from "../samsung-uni-9.jpg";
 import oppo from "../oppo.jpg";
 import huawei from "../Huawei.jpg";
+import i13 from "../i13.jpg";
 
 let mobiles = [
   {
@@ -95,6 +96,25 @@ let mobiles = [
     brand: "Huawei",
     category: "smartphones",
     thumbnail: huawei,
+    images: [
+      "https://i.dummyjson.com/data/products/5/1.jpg",
+      "https://i.dummyjson.com/data/products/5/2.jpg",
+      "https://i.dummyjson.com/data/products/5/3.jpg",
+    ],
+  },
+  {
+    id: 6,
+    title: "iPhone 13",
+    description:
+      "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+    price: 800,
+    discountPercentage: 10.58,
+    state: true,
+    rating: 4.09,
+    stock: 32,
+    brand: "Huawei",
+    category: "smartphones",
+    thumbnail: i13,
     images: [
       "https://i.dummyjson.com/data/products/5/1.jpg",
       "https://i.dummyjson.com/data/products/5/2.jpg",
